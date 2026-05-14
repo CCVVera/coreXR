@@ -116,9 +116,9 @@ h1.hero-title{
   font-family:var(--serif);font-weight:900;
   font-size:clamp(36px,4.5vw,58px);
   line-height:1.2;letter-spacing:-0.01em;
-  color:#fff;margin-bottom:10px;
+  color:#fff;margin-top:0;margin-bottom:10px;padding:0;
 }
-h1.hero-title em{font-style:normal;color:var(--gold);}
+h1.hero-title span{color:var(--gold);}
 .hero-rule{width:40px;height:2px;background:var(--gold);margin:24px 0;opacity:0.7;}
 .hero-sub{
   font-size:16px;font-weight:300;color:rgba(255,255,255,0.6);
@@ -536,13 +536,113 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
   #bridge .bridge-inner{flex-direction:column;padding:24px;}
 }
 </style>
+<noscript><style>.rv{opacity:1!important;transform:none!important;}</style></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://arplanet.com.tw/#organization",
+      "name": "宇萌數位科技有限公司",
+      "alternateName": "CoreXR",
+      "url": "https://arplanet.com.tw",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://arplanet.com.tw/coreXR_LOGO.png",
+        "width": 200,
+        "height": 56
+      },
+      "description": "整合 AI 與 XR 技術，為博物館、觀光工廠及商業空間解決人力缺口，創造高投報率的場域數位轉型。16 年實戰經驗，提供 AI 虛擬館員、AR 互動導購、無碼定位系統等模組化解決方案。",
+      "foundingDate": "2010",
+      "areaServed": {
+        "@type": "Country",
+        "name": "台灣"
+      },
+      "knowsAbout": ["擴增實境", "人工智慧", "XR 體驗設計", "場域數位轉型", "智慧博物館", "AR 導購"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "CoreXR 場域數位轉型服務",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@id": "https://arplanet.com.tw/#service-ai-guide"}},
+          {"@type": "Offer", "itemOffered": {"@id": "https://arplanet.com.tw/#service-ar-commerce"}},
+          {"@type": "Offer", "itemOffered": {"@id": "https://arplanet.com.tw/#service-xr-experience"}},
+          {"@type": "Offer", "itemOffered": {"@id": "https://arplanet.com.tw/#service-positioning"}},
+          {"@type": "Offer", "itemOffered": {"@id": "https://arplanet.com.tw/#service-consulting"}}
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://arplanet.com.tw/#service-ai-guide",
+      "name": "AI 虛擬館員導覽服務",
+      "alternateName": "AI Virtual Guide",
+      "description": "「親切領導型」AI 數位導覽員，提供 24 小時多語系專業接待，取代傳統語音導覽機，解決場館志工荒問題，成本遠低於長期人力聘用。",
+      "provider": {"@id": "https://arplanet.com.tw/#organization"},
+      "serviceType": "AI 導覽技術",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "博物館、文化館所、國家級展館"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://arplanet.com.tw/#service-ar-commerce",
+      "name": "AR 互動導購模組",
+      "alternateName": "AR Interactive Commerce",
+      "description": "觀眾在展品前啟動 AR 互動的瞬間，自動發放電子優惠券並跳出購買連結，精準導引至文創商店，可提升提袋率 60%，讓感動即時轉為訂單。",
+      "provider": {"@id": "https://arplanet.com.tw/#organization"},
+      "serviceType": "AR 導購轉化",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "觀光工廠、企業展廳、文創商店"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://arplanet.com.tw/#service-xr-experience",
+      "name": "XR 視覺體驗設計",
+      "alternateName": "XR Visual Experience Design",
+      "description": "運用 XR 技術打造現象級視覺奇觀，為短期特展與國際博覽會創造高社群分享價值的互動裝置，讓場域自帶流量，延長觀眾留駐時間。",
+      "provider": {"@id": "https://arplanet.com.tw/#organization"},
+      "serviceType": "XR 展覽體驗設計",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "短期特展、國際博覽會、品牌體驗館"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://arplanet.com.tw/#service-positioning",
+      "name": "CoreXR 無碼定位系統",
+      "alternateName": "Codeless AR Positioning System",
+      "description": "觀眾拿起手機即可啟動 AR 互動，無需掃 QR Code、無需額外硬體設備，不破壞展場視覺美感，單人即可完成維運管理。",
+      "provider": {"@id": "https://arplanet.com.tw/#organization"},
+      "serviceType": "AR 定位技術"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://arplanet.com.tw/#service-consulting",
+      "name": "場域數位轉型顧問服務",
+      "alternateName": "Venue Digital Transformation Consulting",
+      "description": "提供標案規格範本、技術轉型白皮書與 ROI 試算模型，協助場館對接政府補助與公部門採購，16 年實戰顧問陪同全程規劃 5–8 月預算規劃期轉型。",
+      "provider": {"@id": "https://arplanet.com.tw/#organization"},
+      "serviceType": "數位轉型顧問",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "政府機關、公立博物館、文化部門"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
-    <img src="coreXR_LOGO.png" alt="CoreXR Logo" style="height:36px;width:auto;">
+    <img src="coreXR_LOGO.png" alt="宇萌 CoreXR - 場域數位轉型與 AI 導覽專家" style="height:36px;width:auto;">
   </a>
   <div class="nav-links">
     <a href="#markets">場域類型</a>
@@ -566,14 +666,15 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
       <div class="hero-left">
         <div class="hero-eyebrow">2026 智慧館所轉型白皮書</div>
         <h1 class="hero-title">
-          讓場域開口說話：<br>CoreXR <em>數位敘事</em>解決方案，<br>重塑空間<em>商業產值</em>
+          讓場域開口說話：<br>
+          <span>CoreXR 數位敘事<br>解決方案，重塑空間商業產值</span>
         </h1>
         <div class="hero-rule"></div>
         <p class="hero-sub">
           整合 <strong>AI 與 XR 技術</strong>，為博物館、觀光工廠及商業空間，解決人力缺口並創造<strong>高投報率</strong>的數位轉型。
         </p>
         <div class="hero-btns">
-          <a href="#cta" class="btn-gold">獲取模組化轉型方案 →</a>
+          <a href="#models" class="btn-gold">查看 2026 轉型方案 →</a>
           <a href="#cta" class="btn-ghost">下載預算規劃參考表</a>
         </div>
       </div>
@@ -669,7 +770,7 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
           <span class="m-typetag">文化資產數位化</span>
         </div>
         <h3>讓國寶動起來，不再受限於<strong>人力缺口</strong>。</h3>
-        <p><strong>宇萌 AI 虛擬導覽解決方案</strong>，為<strong>博物館</strong>與<strong>國家級展館</strong>提供 <strong>24h 多語系接待</strong>，解決<strong>志工荒</strong>同時提升<strong>文化資產</strong>的數位體驗。</p>
+        <p><strong>宇萌 AI 虛擬導覽解決方案</strong>，為<strong>博物館</strong>與<strong>國家級展館</strong>提供 <strong>24h 多語系接待</strong>，解決<strong>志工荒</strong>同時提升<strong>文化資產</strong>的數位體驗。滿足大眾對沉浸式導覽與數位策展的期待，解決文化場域轉型過程中的敘事難題。</p>
         <ul class="pain-list">
           <li><span class="pbadge h">人力缺口</span><div class="pain-text"><strong>導覽人力嚴重短缺</strong>志工老齡化、招募困難，旺季接待品質難以維持，語言服務更是奢望。</div></li>
           <li><span class="pbadge r">變現缺口</span><div class="pain-text"><strong>文創營收停滯不前</strong>觀眾只看展不消費，文創轉化率低，票務收入無法支撐數位投資。</div></li>
@@ -678,9 +779,9 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
       </div>
       <div class="m-right">
         <h4>CoreXR 對應解方</h4>
-        <div class="sol-item"><h5>AI 虛擬館員：解決志工荒，提供 24h 多語系專業導覽</h5><p>「親切領導型」數位顧問取代枯燥語音導覽機，多語言接待零斷點，成本遠低於長期聘用。</p></div>
-        <div class="sol-item"><h5>AR 互動帶動文創轉化</h5><p>觀眾在展品前啟動 AR 互動的當下，即跳出限定文創購買連結，感動即時轉為訂單。</p></div>
-        <div class="sol-item"><h5>CoreXR 無碼定位系統</h5><p>拿起手機即互動，無需掃碼、無需額外硬體，不破壞展場美感，維運一人即可完成。</p></div>
+        <div class="sol-item"><h5><strong>AI 虛擬館員</strong>：解決志工荒，提供 <strong>24h 多語系</strong>專業導覽</h5><p>「親切領導型」數位顧問取代枯燥語音導覽機，多語言接待零斷點，成本遠低於長期聘用。</p></div>
+        <div class="sol-item"><h5><strong>AR 互動</strong>帶動文創轉化</h5><p>觀眾在展品前啟動 AR 互動的當下，即跳出限定文創購買連結，感動即時轉為訂單。</p></div>
+        <div class="sol-item"><h5><strong>CoreXR 無碼定位系統</strong></h5><p>拿起手機即互動，無需掃碼、無需額外硬體，不破壞展場美感，維運一人即可完成。</p></div>
       </div>
     </div>
     <!-- B -->
@@ -692,7 +793,7 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
           <span class="m-typetag">品牌體驗升級</span>
         </div>
         <h3>AR 互動導購，將人流轉化為<strong>實質產值</strong>。</h3>
-        <p>針對<strong>觀光工廠</strong>與<strong>企業展廳</strong>設計的新商業模式，在觀眾被感動的瞬間精準發放<strong>電子優惠券</strong>，顯著提升<strong>提袋率</strong>與<strong>轉化率</strong>。</p>
+        <p>針對<strong>觀光工廠</strong>與<strong>企業展廳</strong>設計的新商業模式，在觀眾被感動的瞬間精準發放<strong>電子優惠券</strong>，顯著提升<strong>提袋率</strong>與<strong>轉化率</strong>。對接智慧零售與品牌行銷需求，將實體人流轉化為可追蹤、可量化的數位轉型產值。</p>
         <ul class="pain-list">
           <li><span class="pbadge h">人力缺口</span><div class="pain-text"><strong>旺季接待人力不足</strong>假日旺季人手告急，解說品質不穩，訪客體驗大打折扣，卻無法持續增聘。</div></li>
           <li><span class="pbadge r">變現缺口</span><div class="pain-text"><strong>參觀與消費斷鏈</strong>訪客完成參觀後離場，購物衝動無法被即時捕捉，現場銷售未達潛力上限。</div></li>
@@ -701,9 +802,9 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
       </div>
       <div class="m-right">
         <h4>CoreXR 對應解方</h4>
-        <div class="sol-item"><h5>AR 導購遊戲：在感動瞬間領取優惠券，提升提袋率 60%</h5><p>AR 互動達成後自動發放線上電子優惠券，精準導引至實體店鋪消耗，提袋率顯著提升。</p></div>
-        <div class="sol-item"><h5>品牌故事沉浸化呈現</h5><p>製程、原料產地、品牌歷程以 XR 情境重現，讓訪客親身體驗品牌價值，深化黏著度。</p></div>
-        <div class="sol-item"><h5>訪客行為數據回饋運營</h5><p>了解哪個展區停留最久、哪個互動點轉化最高，數據驅動場域優化，每次迭代更精準。</p></div>
+        <div class="sol-item"><h5><strong>AR 導購遊戲</strong>：在感動瞬間領取優惠券，提升<strong>提袋率 60%</strong></h5><p>AR 互動達成後自動發放線上電子優惠券，精準導引至實體店鋪消耗，提袋率顯著提升。</p></div>
+        <div class="sol-item"><h5><strong>品牌故事</strong>沉浸化呈現</h5><p>製程、原料產地、品牌歷程以 XR 情境重現，讓訪客親身體驗品牌價值，深化黏著度。</p></div>
+        <div class="sol-item"><h5><strong>訪客行為數據</strong>回饋運營</h5><p>了解哪個展區停留最久、哪個互動點轉化最高，數據驅動場域優化，每次迭代更精準。</p></div>
       </div>
     </div>
     <!-- C -->
@@ -715,7 +816,7 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
           <span class="m-typetag">社群打卡熱點</span>
         </div>
         <h3>引爆社群打卡，讓場域<strong>自帶流量</strong>。</h3>
-        <p>運用 <strong>XR 視覺體驗設計</strong>打造<strong>現象級奇觀</strong>，讓<strong>短期特展</strong>與<strong>國際博覽會</strong>成為<strong>社群媒體</strong>的焦點，延長留駐時間並極大化<strong>品牌聲量</strong>。</p>
+        <p>運用 <strong>XR 視覺體驗設計</strong>打造<strong>現象級奇觀</strong>，讓<strong>短期特展</strong>與<strong>國際博覽會</strong>成為<strong>社群媒體</strong>的焦點，延長留駐時間並極大化<strong>品牌聲量</strong>。強化展會的虛實整合互動，提升社群擴散力，創造符合數位原住民偏好的感官奇觀。</p>
         <ul class="pain-list">
           <li><span class="pbadge h">人力缺口</span><div class="pain-text"><strong>跨場地維運協調複雜</strong>多展區、多語系接待需求，展期間人力調配成本與難度極高。</div></li>
           <li><span class="pbadge r">變現缺口</span><div class="pain-text"><strong>票務以外收益難以開拓</strong>特展週期短，如何最大化每位觀眾的消費價值是核心挑戰。</div></li>
@@ -724,9 +825,9 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
       </div>
       <div class="m-right">
         <h4>CoreXR 對應解方</h4>
-        <div class="sol-item"><h5>XR 視覺奇觀創造打卡誘因</h5><p>設計具高度分享價值的互動裝置，讓觀眾主動成為品牌傳播節點，社群曝光零成本擴散。</p></div>
-        <div class="sol-item"><h5>限時限定導購模組</h5><p>觀眾掃描展品，畫面立即跳出「期間限定紀念品」下單連結，以稀缺性激發即時購買衝動。</p></div>
-        <div class="sol-item"><h5>AI 虛擬代言人全程導覽</h5><p>客製化 AI 虛擬人根據觀眾互動推薦套票組合與周邊商品，兼顧體驗與營收雙重目標。</p></div>
+        <div class="sol-item"><h5><strong>XR 視覺奇觀</strong>創造打卡誘因</h5><p>設計具高度分享價值的互動裝置，讓觀眾主動成為品牌傳播節點，社群曝光零成本擴散。</p></div>
+        <div class="sol-item"><h5><strong>限時限定導購模組</strong></h5><p>觀眾掃描展品，畫面立即跳出「期間限定紀念品」下單連結，以稀缺性激發即時購買衝動。</p></div>
+        <div class="sol-item"><h5><strong>AI 虛擬代言人</strong>全程導覽</h5><p>客製化 AI 虛擬人根據觀眾互動推薦套票組合與周邊商品，兼顧體驗與營收雙重目標。</p></div>
       </div>
     </div>
   </div>
@@ -833,15 +934,15 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
           <span class="dash-live">● 資料同步中</span>
         </div>
         <div class="dash-metrics">
-          <div class="dash-m"><div class="dash-m-v">3,847</div><div class="dash-m-l">今日互動人次</div></div>
-          <div class="dash-m"><div class="dash-m-v">68%</div><div class="dash-m-l">AR 啟動率</div></div>
-          <div class="dash-m"><div class="dash-m-v">NT$82K</div><div class="dash-m-l">導購轉化金額</div></div>
-          <div class="dash-m"><div class="dash-m-v">12.4分</div><div class="dash-m-l">平均停留時長</div></div>
+          <div class="dash-m" aria-label="今日互動人次：3,847"><div class="dash-m-v">3,847</div><div class="dash-m-l">今日互動人次</div></div>
+          <div class="dash-m" aria-label="AR 啟動率：68%"><div class="dash-m-v">68%</div><div class="dash-m-l">AR 啟動率</div></div>
+          <div class="dash-m" aria-label="導購轉化金額：NT$82K"><div class="dash-m-v">NT$82K</div><div class="dash-m-l">導購轉化金額</div></div>
+          <div class="dash-m" aria-label="平均停留時長：12.4分鐘"><div class="dash-m-v">12.4分</div><div class="dash-m-l">平均停留時長</div></div>
         </div>
         <div class="dash-bars">
-          <div class="bar-row"><div class="bar-lbl"><span>常設展區</span><span>84%</span></div><div class="bar-track"><div class="bar-fill" style="width:84%"></div></div></div>
-          <div class="bar-row"><div class="bar-lbl"><span>特展展廳</span><span>91%</span></div><div class="bar-track"><div class="bar-fill" style="width:91%"></div></div></div>
-          <div class="bar-row"><div class="bar-lbl"><span>文創商店轉化</span><span>37%</span></div><div class="bar-track"><div class="bar-fill" style="width:37%"></div></div></div>
+          <div class="bar-row" aria-label="常設展區 AR 互動率：84%"><div class="bar-lbl"><span>常設展區</span><span>84%</span></div><div class="bar-track"><div class="bar-fill" style="width:84%"></div></div></div>
+          <div class="bar-row" aria-label="特展展廳 AR 互動率：91%"><div class="bar-lbl"><span>特展展廳</span><span>91%</span></div><div class="bar-track"><div class="bar-fill" style="width:91%"></div></div></div>
+          <div class="bar-row" aria-label="文創商店轉化率：37%"><div class="bar-lbl"><span>文創商店轉化</span><span>37%</span></div><div class="bar-track"><div class="bar-fill" style="width:37%"></div></div></div>
         </div>
       </div>
     </div>
@@ -1018,7 +1119,7 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo"><img src="coreXR_LOGO.png" alt="CoreXR Logo" style="height:28px;width:auto;"></div>
+  <div class="footer-logo"><img src="coreXR_LOGO.png" alt="宇萌 CoreXR - 場域數位轉型與 AI 導覽專家" style="height:28px;width:auto;"></div>
   <p>© 2026 宇萌數位科技有限公司・場域數位轉型夥伴</p>
 </footer>
 
