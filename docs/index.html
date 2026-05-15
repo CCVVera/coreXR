@@ -280,6 +280,36 @@ section{padding:96px 48px;}
 .gap-sol span{font-size:15px;font-weight:400;color:rgba(255,255,255,0.65);line-height:1.7;}
 .gap-extra{font-size:15px;font-weight:300;color:rgba(255,255,255,0.5);line-height:1.8;margin-top:12px;margin-bottom:0;}
 .gap-extra strong{color:var(--gold-lt);font-weight:600;}
+/* gpc enhanced cards */
+.gpc-icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+.gpc-icon--gold{background:rgba(212,175,55,0.15);color:#d4af37;}
+.gpc-icon--teal{background:rgba(0,160,140,0.15);color:#00a08c;}
+.gpc-icon--blue{background:rgba(60,120,220,0.15);color:#3c78dc;}
+.gpc-desc{font-size:16px;font-weight:300;color:rgba(255,255,255,0.55);line-height:1.8;margin-bottom:18px;}
+.gpc-desc strong{color:#fff;font-weight:600;}
+.gpc-sol-box{padding:14px 16px;border-radius:8px;margin-bottom:18px;}
+.gpc-sol-box span{font-size:15px;line-height:1.7;}
+.gpc-sol-box--gold{background:rgba(212,175,55,0.1);border-left:3px solid #d4af37;}
+.gpc-sol-box--gold span{color:rgba(255,255,255,0.7);}
+.gpc-sol-box--teal{background:rgba(0,160,140,0.1);border-left:3px solid #00a08c;}
+.gpc-sol-box--teal span{color:rgba(255,255,255,0.7);}
+.gpc-sol-box--blue{background:rgba(60,120,220,0.1);border-left:3px solid #3c78dc;}
+.gpc-sol-box--blue span{color:rgba(255,255,255,0.7);}
+.gpc-expandable{overflow:hidden;max-height:0;transition:max-height 0.35s ease;}
+.gpc-expandable.open{max-height:120px;}
+.gpc-toggle{display:flex;align-items:center;gap:6px;margin-top:4px;background:none;border:none;padding:0;cursor:pointer;color:rgba(255,255,255,0.35);font-size:14px;font-family:var(--sans);transition:color 0.2s;}
+.gpc-toggle:hover{color:rgba(255,255,255,0.7);}
+.gpc-toggle[aria-expanded="true"] .gpc-toggle-text::before{content:"收起 ";}
+.gpc-toggle[aria-expanded="true"] .gpc-toggle-icon{transform:rotate(90deg);}
+.gpc-toggle-icon{display:inline-block;transition:transform 0.25s;}
+.gpc-cta{margin-top:52px;padding:44px 48px;background:rgba(255,255,255,0.04);border:0.5px solid rgba(255,255,255,0.1);border-radius:16px;text-align:center;}
+.gpc-cta-title{font-family:var(--serif);font-size:clamp(20px,2vw,26px);color:#fff;margin-bottom:10px;}
+.gpc-cta-sub{font-size:16px;color:rgba(255,255,255,0.45);line-height:1.7;margin-bottom:32px;}
+.gpc-solutions{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;}
+.gpc-sol-item{padding:18px 36px;background:rgba(255,255,255,0.05);border-radius:10px;}
+.gpc-sol-item h4{font-size:16px;font-weight:700;color:#fff;margin-bottom:4px;}
+.gpc-sol-item p{font-size:14px;color:rgba(255,255,255,0.45);margin:0;}
+.gpc-sol-div{font-size:22px;color:rgba(255,255,255,0.2);padding:0 16px;}
 /* === CORE DATA MERGED (features + data) === */
 #features{background:var(--cream)!important;}
 #features .sec-eyebrow{color:var(--gold)!important;}
@@ -534,9 +564,10 @@ section{padding:96px 48px;}
   max-width:640px;margin:0 auto 56px;
   display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;text-align:left;
 }
-.cta-pt{border:0.5px solid rgba(255,255,255,0.08);border-radius:10px;padding:20px;}
-.cta-pt h5{font-size:15px;font-weight:500;color:var(--gold);margin-bottom:6px;}
-.cta-pt p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.4);line-height:1.7;}
+.cta-pt{background:#fff;border:0.5px solid #e8e8e8;border-radius:10px;padding:24px;}
+.cta-pt h5{font-size:17px;font-weight:700;color:var(--gold);margin-bottom:8px;}
+.cta-pt p{font-size:16px;font-weight:400;color:#666;line-height:1.75;}
+.cta-pt p strong{color:var(--ink);}
 .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
 .lead-kit{
   max-width:400px;margin:56px auto 0;
@@ -914,29 +945,87 @@ footer p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.18);}
       <h2 class="sec-title">每座場館都在對抗<br>這三個缺口。</h2>
       <p class="sec-sub">不論您的場域屬於哪個類型，這三個根本問題始終如影隨形。</p>
     </div>
+
     <div class="gaps-grid">
-      <div class="gap-card rv">
+
+      <!-- 01 人力缺口 -->
+      <article class="gap-card gpc rv" data-gap="0">
+        <div class="gpc-icon gpc-icon--gold">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <circle cx="24" cy="14" r="7"/><path d="M8 40c0-8.837 7.163-16 16-16s16 7.163 16 16"/>
+          </svg>
+        </div>
         <span class="gap-n">Gap 01</span>
         <h3>人力缺口</h3>
-        <p>導覽人力短缺、老齡化，旺季品質失控。現在，您不需要添購昂貴且難維護的機器人。<strong>AI 數位虛擬導覽員</strong>能在現有螢幕或行動裝置上提供服務，維運成本更低，專業度更高。</p>
-        <div class="gap-sol"><span>AI 數位虛擬導覽員 24 小時在線，多語系接待零斷點，一次建置長期服務，維運成本遠低於人力。</span></div>
-        <p class="gap-extra">導入 <strong>AI 數位虛擬導覽員</strong>技術，可優化 <strong>30%</strong> 現場人力營運成本，並實現<strong>多語系零時差接待</strong>。</p>
-      </div>
-      <div class="gap-card rv rv-d1">
+        <p class="gpc-desc">導覽人力短缺、老齡化，旺季品質失控。您不需要添購昂貴且難維護的機器人，<strong>AI 數位虛擬導覽員</strong>在現有裝置上即可提供服務。</p>
+        <div class="gpc-sol-box gpc-sol-box--gold">
+          <span>AI 數位虛擬導覽員 24 小時在線，多語系接待零斷點，維運成本遠低於人力。</span>
+        </div>
+        <div class="gpc-expandable" id="gpc-extra-0">
+          <p class="gap-extra">導入 <strong>AI 數位虛擬導覽員</strong>，可優化 <strong>30%</strong> 現場人力成本，並實現<strong>多語系零時差接待</strong>。</p>
+        </div>
+        <button class="gpc-toggle" onclick="toggleGpc(this,'gpc-extra-0')" aria-expanded="false">
+          <span class="gpc-toggle-text">了解更多</span><span class="gpc-toggle-icon">→</span>
+        </button>
+      </article>
+
+      <!-- 02 變現缺口 -->
+      <article class="gap-card gpc rv rv-d1" data-gap="1">
+        <div class="gpc-icon gpc-icon--teal">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <circle cx="24" cy="24" r="16"/><path d="M24 12v24M16 18h12a4 4 0 0 1 0 8H16"/>
+          </svg>
+        </div>
         <span class="gap-n">Gap 02</span>
         <h3>變現缺口</h3>
-        <p>觀眾只看不買、文創轉化率低、票務收入單一。參觀結束後，場館與觀眾的商業關係就此中斷。</p>
-        <div class="gap-sol"><span>AR 導購模組在觀眾「被感動的瞬間」完成商業轉化，導覽即導購，每次互動都是潛在訂單。</span></div>
-        <p class="gap-extra">透過 <strong>AR 導購模組</strong>捕捉觀眾的情感觸發點，實測可提升文創或周邊商品 <strong>20% 以上</strong>的即時轉化率。</p>
-      </div>
-      <div class="gap-card rv rv-d2">
+        <p class="gpc-desc">觀眾只看不買、文創轉化率低、票務收入單一。參觀結束後，場館與觀眾的商業關係就此中斷。</p>
+        <div class="gpc-sol-box gpc-sol-box--teal">
+          <span>AR 導購模組在觀眾「被感動的瞬間」完成商業轉化，導覽即導購，每次互動都是潛在訂單。</span>
+        </div>
+        <div class="gpc-expandable" id="gpc-extra-1">
+          <p class="gap-extra">透過 <strong>AR 導購模組</strong>，實測可提升文創或周邊商品 <strong>20% 以上</strong>的即時轉化率。</p>
+        </div>
+        <button class="gpc-toggle" onclick="toggleGpc(this,'gpc-extra-1')" aria-expanded="false">
+          <span class="gpc-toggle-text">了解更多</span><span class="gpc-toggle-icon">→</span>
+        </button>
+      </article>
+
+      <!-- 03 數位缺口 -->
+      <article class="gap-card gpc rv rv-d2" data-gap="2">
+        <div class="gpc-icon gpc-icon--blue">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <rect x="6" y="6" width="36" height="36" rx="4"/><polyline points="14,30 20,22 28,26 34,16"/>
+          </svg>
+        </div>
         <span class="gap-n">Gap 03</span>
         <h3>數位缺口</h3>
-        <p>沒有數據、沒有互動、不知道觀眾在哪裡停留。靠直覺辦展的時代已經過去。</p>
-        <div class="gap-sol"><span>CoreXR 內建觀眾行為儀表板，即時回傳互動熱區、停留時長與轉化路徑，讓每個決策有數據支撐。</span></div>
-        <p class="gap-extra"><strong>核心數據儀表板</strong>將觀眾行為透明化，讓展後檢討不再靠直覺，而是具備 <strong>100% 數據支撐</strong>的營運決策。</p>
+        <p class="gpc-desc">沒有數據、沒有互動、不知道觀眾在哪裡停留。靠直覺辦展的時代已經過去。</p>
+        <div class="gpc-sol-box gpc-sol-box--blue">
+          <span>CoreXR 內建觀眾行為儀表板，即時回傳互動熱區、停留時長與轉化路徑，讓每個決策有數據支撐。</span>
+        </div>
+        <div class="gpc-expandable" id="gpc-extra-2">
+          <p class="gap-extra"><strong>核心數據儀表板</strong>將觀眾行為透明化，展後檢討具備 <strong>100% 數據支撐</strong>的營運決策。</p>
+        </div>
+        <button class="gpc-toggle" onclick="toggleGpc(this,'gpc-extra-2')" aria-expanded="false">
+          <span class="gpc-toggle-text">了解更多</span><span class="gpc-toggle-icon">→</span>
+        </button>
+      </article>
+
+    </div>
+
+    <!-- 底部 CTA -->
+    <div class="gpc-cta rv">
+      <h3 class="gpc-cta-title">痛點清楚了，解法在這裡。</h3>
+      <p class="gpc-cta-sub">CoreXR 針對人力、變現、數位三個缺口，各有一套對應的核心模組。不是功能堆疊，是精準狙擊。</p>
+      <div class="gpc-solutions">
+        <div class="gpc-sol-item"><h4>AI 虛擬導覽員</h4><p>24 小時全天候導覽</p></div>
+        <div class="gpc-sol-div">+</div>
+        <div class="gpc-sol-item"><h4>AR 導購</h4><p>即時商業轉化</p></div>
+        <div class="gpc-sol-div">+</div>
+        <div class="gpc-sol-item"><h4>數據儀表板</h4><p>完整行為洞察</p></div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -1045,22 +1134,28 @@ footer p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.18);}
       <div class="merge-card merge-left rv">
         <div style="padding-left:20px;border-left:3px solid #d4af37;">
           <h3 style="font-size:22px;font-weight:800;margin-bottom:30px;">核心轉型路徑</h3>
-          <div style="margin-bottom:25px;">
-            <h4 style="font-size:18px;font-weight:700;margin-bottom:10px;">場域 0 預算啟動</h4>
-            <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;margin-right:8px;">AR 導覽＋導購</span>
-            <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;">營運分潤模式</span>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid #eee;">
+            <h4 style="font-size:17px;font-weight:700;margin:0;white-space:nowrap;">場域 0 預算啟動</h4>
+            <div style="display:flex;gap:8px;flex-shrink:0;margin-left:16px;">
+              <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;">AR 導覽＋導購</span>
+              <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;">永續營運模式</span>
+            </div>
           </div>
-          <div style="margin-bottom:25px;">
-            <h4 style="font-size:18px;font-weight:700;margin-bottom:10px;">場域優化與升級</h4>
-            <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;margin-right:8px;">AI 虛擬導覽員</span>
-            <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;">AR 空間指引</span>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid #eee;">
+            <h4 style="font-size:17px;font-weight:700;margin:0;white-space:nowrap;">場域優化與升級</h4>
+            <div style="display:flex;gap:8px;flex-shrink:0;margin-left:16px;">
+              <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;">AI 虛擬導覽員</span>
+              <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;">AR 空間指引</span>
+            </div>
           </div>
-          <div style="margin-bottom:30px;">
-            <h4 style="font-size:18px;font-weight:700;margin-bottom:10px;">場域營運模板</h4>
-            <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;margin-right:8px;">年度預算規劃</span>
-            <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;">技術規格對齊</span>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid #eee;">
+            <h4 style="font-size:17px;font-weight:700;margin:0;white-space:nowrap;">場域營運模板</h4>
+            <div style="display:flex;gap:8px;flex-shrink:0;margin-left:16px;">
+              <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;">年度預算規劃</span>
+              <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;">技術規格對齊</span>
+            </div>
           </div>
-          <p style="font-size:15px;color:#888;border-top:1px solid #eee;padding-top:15px;">
+          <p style="font-size:15px;color:#888;padding-top:18px;margin:0;">
             宇萌 CoreXR 已具備 <strong style="color:#d4af37;">16+</strong> 年協助場館實現虛實整合轉型之深厚經驗。
           </p>
         </div>
@@ -1134,18 +1229,6 @@ footer p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.18);}
     <div class="cta-btns">
       <a href="#" class="btn-ghost">預約免費場域健診</a>
     </div>
-    <div class="lead-kit" itemscope itemtype="https://schema.org/DigitalDocument" data-category="digital-transformation-whitepaper-2026">
-      <h4 itemprop="name">這不是產品手冊，</h4>
-      <h4>這是您的場域營運手冊。</h4>
-      <div class="lead-kit-sub">下載 2026 轉型白皮書</div>
-      <ul class="kit-list" aria-label="2026 CoreXR 場域數位轉型白皮書內容清單" itemscope itemtype="https://schema.org/ItemList">
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name">指標場域導入後獲利數據報告</span><meta itemprop="position" content="1"></li>
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name">2026 數位轉型必備場域查核表</span><meta itemprop="position" content="2"></li>
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name">ROI 效益評估與成本預算模型</span><meta itemprop="position" content="3"></li>
-        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name">2026 智慧館所趨勢白皮書全文</span><meta itemprop="position" content="4"></li>
-      </ul>
-      <a href="#" class="btn-kit" aria-label="立即下載 CoreXR 2026 轉型實戰包">立即下載：2026 轉型實戰包 →</a>
-    </div>
   </div>
 </section>
 
@@ -1167,6 +1250,13 @@ function toggleFaq(el){
   const was=el.classList.contains('open');
   document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
   if(!was)el.classList.add('open');
+}
+function toggleGpc(btn,id){
+  const box=document.getElementById(id);
+  const open=btn.getAttribute('aria-expanded')==='true';
+  box.classList.toggle('open',!open);
+  btn.setAttribute('aria-expanded',String(!open));
+  btn.querySelector('.gpc-toggle-text').textContent=open?'了解更多':'收起';
 }
 const obs=new IntersectionObserver(es=>{
   es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis');});
