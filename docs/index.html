@@ -31,7 +31,7 @@
 
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{font-family:var(--sans);color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;font-size:16px;line-height:1.75;}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;font-size:18px;line-height:1.75;}
 
 /* ─── NAV ─── */
 nav{
@@ -47,15 +47,15 @@ nav{
   width:32px;height:32px;border-radius:6px;
   background:var(--gold);
   display:flex;align-items:center;justify-content:center;
-  font-family:var(--serif);font-weight:900;font-size:14px;color:var(--dark);
+  font-family:var(--serif);font-weight:900;font-size:16px;color:var(--dark);
 }
-.nav-logo-text{font-family:var(--serif);font-weight:900;font-size:16px;color:#fff;letter-spacing:0.04em;}
+.nav-logo-text{font-family:var(--serif);font-weight:900;font-size:18px;color:#fff;letter-spacing:0.04em;}
 .nav-logo-text span{color:var(--gold);}
 .nav-links{display:flex;gap:28px;}
-.nav-links a{font-size:13px;color:rgba(255,255,255,0.55);text-decoration:none;letter-spacing:0.04em;transition:color 0.2s;}
+.nav-links a{font-size:15px;color:rgba(255,255,255,0.55);text-decoration:none;letter-spacing:0.04em;transition:color 0.2s;}
 .nav-links a:hover{color:#fff;}
 .nav-cta{
-  font-size:13px;font-weight:500;letter-spacing:0.04em;
+  font-size:15px;font-weight:500;letter-spacing:0.04em;
   color:var(--dark);background:var(--gold);
   padding:9px 22px;border-radius:40px;text-decoration:none;
   transition:background 0.2s,transform 0.15s;
@@ -71,17 +71,17 @@ nav{
 }
 .hero-bg-img{
   position:absolute;inset:0;z-index:0;pointer-events:none;
-  background-image:url('vera.png');
+  background-image:url('0515hero.png');
   background-size:cover;background-position:center right;
 }
 .hero-bg-overlay{
   position:absolute;inset:0;z-index:1;pointer-events:none;
   background:linear-gradient(90deg,
-    rgba(13,15,24,0.78) 0%,
-    rgba(13,15,24,0.65) 28%,
-    rgba(13,15,24,0.32) 55%,
-    rgba(13,15,24,0.10) 80%,
-    rgba(13,15,24,0.32) 100%);
+    rgba(13,15,24,0.55) 0%,
+    rgba(13,15,24,0.42) 28%,
+    rgba(13,15,24,0.18) 55%,
+    rgba(13,15,24,0.05) 80%,
+    rgba(13,15,24,0.18) 100%);
 }
 .hero-bg-edge{
   position:absolute;inset:0;z-index:2;pointer-events:none;
@@ -107,7 +107,7 @@ nav{
 .hero-left{}
 .hero-eyebrow{
   display:inline-flex;align-items:center;gap:8px;
-  font-size:11px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;
+  font-size:13px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;
   color:var(--gold);border:0.5px solid rgba(201,168,76,0.3);
   padding:6px 16px;border-radius:40px;margin-bottom:32px;
 }
@@ -121,20 +121,20 @@ h1.hero-title{
 h1.hero-title span{color:var(--gold);}
 .hero-rule{width:40px;height:2px;background:var(--gold);margin:24px 0;opacity:0.7;}
 .hero-sub{
-  font-size:16px;font-weight:300;color:rgba(255,255,255,0.6);
+  font-size:19px;font-weight:300;color:rgba(255,255,255,0.6);
   line-height:1.9;max-width:480px;margin-bottom:40px;
 }
 .hero-sub strong{color:rgba(255,255,255,0.88);font-weight:500;}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
 .btn-gold{
-  font-size:14px;font-weight:500;letter-spacing:0.04em;
+  font-size:16px;font-weight:500;letter-spacing:0.04em;
   color:var(--dark);background:var(--gold);
   padding:13px 28px;border-radius:40px;text-decoration:none;
   transition:background 0.2s,transform 0.15s;
 }
 .btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px);}
 .btn-ghost{
-  font-size:14px;font-weight:400;letter-spacing:0.04em;
+  font-size:16px;font-weight:400;letter-spacing:0.04em;
   color:rgba(255,255,255,0.65);
   border:0.5px solid rgba(255,255,255,0.25);
   padding:13px 28px;border-radius:40px;text-decoration:none;
@@ -142,21 +142,21 @@ h1.hero-title span{color:var(--gold);}
 }
 .btn-ghost:hover{border-color:rgba(255,255,255,0.6);color:#fff;}
 /* hero right: split visual */
-.hero-right{display:flex;flex-direction:column;gap:16px;}
+.hero-right{display:flex;flex-direction:column;gap:16px;align-self:end;}
 .hero-visual-card{
   border-radius:14px;overflow:hidden;position:relative;
   border:0.5px solid rgba(255,255,255,0.08);
 }
-.hero-visual-card.large{height:220px;background:url('vera2.png') center/cover no-repeat;}
-.hero-visual-card.small{height:120px;background:linear-gradient(135deg,#1e2418 0%,#0f1510 100%);}
+.hero-visual-card.large{height:340px;background:url('vera2.png') center/cover no-repeat;}
+.hero-visual-card.small{height:120px;background:url('背景圖片.png') center/cover no-repeat;}
 .hvc-label{
   position:absolute;bottom:16px;left:18px;
-  font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
+  font-size:13px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
   color:rgba(255,255,255,0.45);
 }
 .hvc-tag{
   position:absolute;top:14px;right:14px;
-  font-size:10px;font-weight:500;letter-spacing:0.08em;
+  font-size:12px;font-weight:500;letter-spacing:0.08em;
   color:var(--dark);background:var(--gold);
   padding:3px 10px;border-radius:40px;
 }
@@ -165,9 +165,9 @@ h1.hero-title span{color:var(--gold);}
   align-items:center;justify-content:center;gap:6px;
 }
 .hvc-center-text span{
-  font-family:var(--serif);font-size:15px;font-weight:600;color:rgba(255,255,255,0.7);letter-spacing:0.04em;
+  font-family:var(--serif);font-size:17px;font-weight:600;color:rgba(255,255,255,0.7);letter-spacing:0.04em;
 }
-.hvc-center-text em{font-style:normal;font-size:11px;color:rgba(255,255,255,0.3);letter-spacing:0.06em;}
+.hvc-center-text em{font-style:normal;font-size:13px;color:rgba(255,255,255,0.3);letter-spacing:0.06em;}
 .hvc-divider{width:1px;height:30px;background:rgba(255,255,255,0.12);}
 /* hero stats */
 .hero-stats{
@@ -182,13 +182,13 @@ h1.hero-title span{color:var(--gold);}
   font-family:var(--serif);font-size:32px;font-weight:900;
   color:var(--gold);display:block;line-height:1;margin-bottom:8px;
 }
-.hero-stat-label{font-size:12px;font-weight:300;color:#fff;letter-spacing:0.06em;}
+.hero-stat-label{font-size:14px;font-weight:300;color:#fff;letter-spacing:0.06em;}
 
 /* ─── SECTIONS COMMON ─── */
 section{padding:96px 48px;}
 .container{max-width:1100px;margin:0 auto;}
 .sec-eyebrow{
-  font-size:11px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;
+  font-size:13px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;
   color:var(--gold);display:block;margin-bottom:14px;
 }
 .sec-title{
@@ -196,7 +196,7 @@ section{padding:96px 48px;}
   font-size:clamp(28px,3.2vw,42px);line-height:1.25;
   letter-spacing:-0.01em;color:var(--ink);margin-bottom:14px;
 }
-.sec-sub{font-size:15px;font-weight:300;color:var(--ink3);line-height:1.85;max-width:520px;}
+.sec-sub{font-size:18px;font-weight:300;color:var(--ink3);line-height:1.85;max-width:520px;}
 .sec-header{margin-bottom:56px;}
 
 /* ─── S2 WHY ─── */
@@ -211,7 +211,7 @@ section{padding:96px 48px;}
 }
 .why-icon svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
 .why-item h3{font-family:var(--serif);font-size:18px;font-weight:600;margin-bottom:10px;}
-.why-item p{font-size:14px;font-weight:300;color:var(--ink3);line-height:1.85;}
+.why-item p{font-size:17px;font-weight:300;color:var(--ink3);line-height:1.85;}
 
 /* ─── S3 MARKETS ─── */
 #markets{background:var(--cream);}
@@ -220,7 +220,7 @@ section{padding:96px 48px;}
   padding:4px;border-radius:10px;width:fit-content;margin-bottom:36px;
 }
 .m-tab{
-  padding:9px 22px;border-radius:7px;font-size:13px;font-weight:500;
+  padding:9px 22px;border-radius:7px;font-size:15px;font-weight:500;
   color:var(--ink3);cursor:pointer;border:none;background:none;
   transition:all 0.2s;letter-spacing:0.02em;
 }
@@ -230,20 +230,20 @@ section{padding:96px 48px;}
 .m-left{}
 .m-typetags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px;}
 .m-typetag{
-  display:inline-block;font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
+  display:inline-block;font-size:13px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
   color:var(--teal);background:var(--teal-lt);padding:4px 13px;border-radius:40px;margin-bottom:18px;
 }
 .m-typetags .m-typetag{margin-bottom:0;}
 .m-left h3{font-family:var(--serif);font-size:28px;font-weight:900;line-height:1.25;margin-bottom:14px;}
-.m-left>p{font-size:14px;font-weight:300;color:var(--ink3);line-height:1.85;margin-bottom:24px;}
+.m-left>p{font-size:17px;font-weight:300;color:var(--ink3);line-height:1.85;margin-bottom:24px;}
 .pain-list{list-style:none;}
 .pain-list li{
   display:flex;gap:12px;align-items:flex-start;
-  padding:14px 0;border-bottom:0.5px solid var(--border);font-size:14px;
+  padding:14px 0;border-bottom:0.5px solid var(--border);font-size:16px;
 }
 .pain-list li:last-child{border-bottom:none;}
 .pbadge{
-  font-size:10px;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;
+  font-size:12px;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;
   padding:3px 9px;border-radius:40px;white-space:nowrap;margin-top:2px;flex-shrink:0;
 }
 .pbadge.h{background:#fde8e8;color:#b72b2b;}
@@ -253,13 +253,13 @@ section{padding:96px 48px;}
 .pain-text strong{font-weight:500;display:block;margin-bottom:2px;}
 .m-right{background:var(--dark);border-radius:14px;padding:36px;}
 .m-right h4{
-  font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;
+  font-size:13px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;
   color:var(--gold);margin-bottom:22px;
 }
 .sol-item{padding:18px 0;border-bottom:0.5px solid rgba(255,255,255,0.08);}
 .sol-item:last-child{border-bottom:none;}
-.sol-item h5{font-size:15px;font-weight:500;color:#fff;margin-bottom:6px;}
-.sol-item p{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);line-height:1.75;}
+.sol-item h5{font-size:17px;font-weight:500;color:#fff;margin-bottom:6px;}
+.sol-item p{font-size:15px;font-weight:300;color:rgba(255,255,255,0.5);line-height:1.75;}
 
 /* ─── S4 GAPS ─── */
 #gaps{background:var(--dark);}
@@ -273,13 +273,40 @@ section{padding:96px 48px;}
   transition:border-color 0.25s,background 0.25s;
 }
 .gap-card:hover{background:rgba(255,255,255,0.07);border-color:rgba(201,168,76,0.35);}
-.gap-n{font-size:10px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;display:block;}
+.gap-n{font-size:12px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;display:block;}
 .gap-card h3{font-family:var(--serif);font-size:22px;font-weight:900;color:#fff;margin-bottom:12px;}
-.gap-card>p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.4);line-height:1.8;margin-bottom:24px;}
+.gap-card>p{font-size:17px;font-weight:300;color:rgba(255,255,255,0.4);line-height:1.8;margin-bottom:24px;}
 .gap-sol{background:rgba(201,168,76,0.08);border-left:2px solid var(--gold);padding:13px 16px;border-radius:0 6px 6px 0;}
-.gap-sol span{font-size:13px;font-weight:400;color:rgba(255,255,255,0.65);line-height:1.7;}
-.gap-extra{font-size:13px;font-weight:300;color:rgba(255,255,255,0.5);line-height:1.8;margin-top:12px;margin-bottom:0;}
+.gap-sol span{font-size:15px;font-weight:400;color:rgba(255,255,255,0.65);line-height:1.7;}
+.gap-extra{font-size:15px;font-weight:300;color:rgba(255,255,255,0.5);line-height:1.8;margin-top:12px;margin-bottom:0;}
 .gap-extra strong{color:var(--gold-lt);font-weight:600;}
+/* === CORE DATA MERGED (features + data) === */
+#features{background:var(--cream)!important;}
+#features .sec-eyebrow{color:var(--gold)!important;}
+#features .sec-eyebrow::before{background:var(--gold);}
+#features .sec-title{color:var(--ink)!important;}
+#features .sec-sub{color:var(--ink3)!important;}
+.cdash-layout{display:grid;grid-template-columns:1fr 1.25fr;gap:52px;align-items:start;margin-top:52px;}
+.cdash-svc-list{display:flex;flex-direction:column;}
+.cdash-svc{display:flex;gap:22px;padding:28px 0;border-bottom:1px solid var(--border);}
+.cdash-svc:last-child{border-bottom:none;}
+.cdash-svc-num{font-family:var(--serif);font-size:30px;font-weight:900;color:var(--gold);opacity:0.55;line-height:1;flex-shrink:0;min-width:38px;}
+.cdash-svc h3{font-size:18px;font-weight:700;color:var(--ink)!important;margin-bottom:8px;}
+.cdash-svc>div>p{font-size:17px;font-weight:300;color:var(--ink3)!important;line-height:1.85;}
+.cdash-svc>div>p strong{color:var(--teal)!important;font-weight:600;}
+.cdash-board-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
+.cdash-board-title{font-size:15px;font-weight:500;color:rgba(255,255,255,0.85)!important;}
+.dcard-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.dcard{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.18);border-radius:12px;padding:20px 18px;display:flex;flex-direction:column;gap:5px;transition:border-color 0.25s,transform 0.25s;box-shadow:0 8px 24px rgba(0,0,0,0.25);}
+.dcard:hover{border-color:rgba(201,168,76,0.55);transform:translateY(-3px);background:rgba(255,255,255,0.11);}
+.dcard-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
+.dcard-icon{width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;font-size:18px;line-height:1;}
+.dcard-trend{font-size:13px;font-weight:700;color:#4CAF50;display:inline-flex;align-items:center;gap:2px;}
+.dcard-trend::before{content:'↑ ';}
+.dcard-num{font-family:var(--serif);font-size:28px;font-weight:900;color:#d4af37;line-height:1.1;}
+.dcard-unit{font-family:var(--sans);font-size:15px;font-weight:400;color:rgba(212,175,55,0.82);}
+.dcard-title{font-size:14px;font-weight:500;color:rgba(255,255,255,0.92)!important;letter-spacing:0.03em;margin-bottom:4px;}
+.dcard-desc{font-size:14px;font-weight:300;color:rgba(255,255,255,0.72)!important;line-height:1.75;}
 
 /* ─── BRIDGE ─── */
 #bridge{background:var(--dark2);padding:48px;}
@@ -290,12 +317,12 @@ section{padding:96px 48px;}
   border-radius:14px;padding:36px 48px;
 }
 .bridge-text h3{font-family:var(--serif);font-size:22px;font-weight:900;color:#fff;margin-bottom:6px;}
-.bridge-text p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.45);}
+.bridge-text p{font-size:16px;font-weight:300;color:rgba(255,255,255,0.45);}
 .bridge-tag{
   display:flex;gap:12px;flex-shrink:0;
 }
 .bridge-pill{
-  font-size:12px;font-weight:500;letter-spacing:0.06em;
+  font-size:14px;font-weight:500;letter-spacing:0.06em;
   color:var(--dark);background:var(--gold);
   padding:6px 16px;border-radius:40px;
 }
@@ -310,7 +337,7 @@ section{padding:96px 48px;}
 }
 .feat-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,0.07);border-color:var(--gold);}
 .feat-gap-tag{
-  display:inline-block;font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
+  display:inline-block;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
   border:0.5px solid var(--border);border-radius:40px;
   padding:3px 10px;color:var(--ink3);margin-bottom:20px;
 }
@@ -319,10 +346,10 @@ section{padding:96px 48px;}
   color:var(--gold);opacity:0.25;line-height:1;margin-bottom:12px;
 }
 .feat-card h3{font-family:var(--serif);font-size:19px;font-weight:900;margin-bottom:10px;}
-.feat-card>p{font-size:14px;font-weight:300;color:var(--ink3);line-height:1.85;margin-bottom:20px;}
+.feat-card>p{font-size:17px;font-weight:300;color:var(--ink3);line-height:1.85;margin-bottom:20px;}
 .feat-scenario{
   background:var(--cream);border-radius:8px;padding:14px;
-  font-size:12px;font-weight:300;color:var(--ink3);line-height:1.75;
+  font-size:14px;font-weight:300;color:var(--ink3);line-height:1.75;
 }
 .feat-scenario strong{color:var(--ink2);font-weight:500;display:block;margin-bottom:3px;}
 
@@ -338,8 +365,8 @@ section{padding:96px 48px;}
   font-family:var(--serif);font-size:28px;font-weight:900;
   color:var(--gold);flex-shrink:0;width:40px;line-height:1;
 }
-.data-pt h4{font-size:15px;font-weight:500;color:#fff;margin-bottom:4px;}
-.data-pt p{font-size:13px;font-weight:300;color:rgba(255,255,255,0.45);line-height:1.7;}
+.data-pt h4{font-size:17px;font-weight:500;color:#fff;margin-bottom:4px;}
+.data-pt p{font-size:15px;font-weight:300;color:rgba(255,255,255,0.45);line-height:1.7;}
 /* dashboard mock */
 .dash{
   background:rgba(255,255,255,0.07);
@@ -351,15 +378,15 @@ section{padding:96px 48px;}
   padding-bottom:16px;margin-bottom:16px;
   border-bottom:0.5px solid rgba(255,255,255,0.1);
 }
-.dash-hd-title{font-size:13px;font-weight:500;color:rgba(255,255,255,0.7);}
-.dash-live{font-size:11px;font-weight:500;color:#4ade80;background:rgba(74,222,128,0.1);padding:3px 10px;border-radius:40px;}
+.dash-hd-title{font-size:15px;font-weight:500;color:rgba(255,255,255,0.7);}
+.dash-live{font-size:13px;font-weight:500;color:#4ade80;background:rgba(74,222,128,0.1);padding:3px 10px;border-radius:40px;}
 .dash-metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;}
 .dash-m{background:rgba(255,255,255,0.06);border-radius:8px;padding:14px;}
 .dash-m-v{font-family:var(--serif);font-size:24px;font-weight:900;color:var(--gold);line-height:1;}
-.dash-m-l{font-size:11px;font-weight:300;color:rgba(255,255,255,0.35);margin-top:5px;}
+.dash-m-l{font-size:13px;font-weight:300;color:rgba(255,255,255,0.35);margin-top:5px;}
 .dash-bars{}
 .bar-row{margin-bottom:10px;}
-.bar-lbl{display:flex;justify-content:space-between;font-size:11px;color:rgba(255,255,255,0.4);margin-bottom:5px;}
+.bar-lbl{display:flex;justify-content:space-between;font-size:13px;color:rgba(255,255,255,0.4);margin-bottom:5px;}
 .bar-track{height:5px;background:rgba(255,255,255,0.08);border-radius:3px;overflow:hidden;}
 .bar-fill{height:100%;background:var(--gold);border-radius:3px;}
 
@@ -370,18 +397,18 @@ section{padding:96px 48px;}
   font-family:var(--serif);font-size:20px;font-weight:400;line-height:1.7;
   color:var(--ink);border-left:2px solid var(--gold);padding-left:24px;margin-bottom:18px;
 }
-.auth-caption{font-size:13px;font-weight:300;color:var(--ink3);padding-left:24px;}
+.auth-caption{font-size:15px;font-weight:300;color:var(--ink3);padding-left:24px;}
 .auth-badges{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 .auth-b{border:0.5px solid var(--border);border-radius:10px;padding:22px;}
-.auth-b h4{font-size:13px;font-weight:500;color:var(--ink);margin-bottom:6px;}
-.auth-b p{font-size:12px;font-weight:300;color:var(--ink3);line-height:1.7;}
+.auth-b h4{font-size:15px;font-weight:500;color:var(--ink);margin-bottom:6px;}
+.auth-b p{font-size:14px;font-weight:300;color:var(--ink3);line-height:1.7;}
 .auth-bar{
   grid-column:1/-1;background:var(--dark);border-radius:10px;padding:24px 28px;
   display:flex;align-items:center;gap:20px;
 }
 .auth-bar-num{font-family:var(--serif);font-size:44px;font-weight:900;color:var(--gold);flex-shrink:0;line-height:1;}
-.auth-bar h4{font-size:14px;font-weight:500;color:#fff;margin-bottom:4px;}
-.auth-bar p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.4);line-height:1.65;}
+.auth-bar h4{font-size:16px;font-weight:500;color:#fff;margin-bottom:4px;}
+.auth-bar p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.4);line-height:1.65;}
 
 /* ─── S8 MODELS ─── */
 #models{background:var(--cream);}
@@ -395,18 +422,18 @@ section{padding:96px 48px;}
 .model-card.feat{background:var(--dark);border-color:var(--gold);}
 .model-badge{
   position:absolute;top:-11px;left:28px;
-  font-size:10px;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;
+  font-size:12px;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;
   background:var(--gold);color:var(--dark);padding:3px 12px;border-radius:40px;
 }
-.model-tag{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:14px;display:block;}
+.model-tag{font-size:13px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:14px;display:block;}
 .model-card.feat .model-tag{color:var(--gold);}
 .model-card h3{font-family:var(--serif);font-size:20px;font-weight:900;margin-bottom:10px;color:var(--ink);}
 .model-card.feat h3{color:#fff;}
-.model-card>p{font-size:13px;font-weight:300;color:var(--ink3);line-height:1.8;margin-bottom:24px;}
+.model-card>p{font-size:15px;font-weight:300;color:var(--ink3);line-height:1.8;margin-bottom:24px;}
 .model-card.feat>p{color:rgba(255,255,255,0.45);}
 .model-feats{list-style:none;}
 .model-feats li{
-  display:flex;gap:9px;font-size:13px;color:var(--ink2);
+  display:flex;gap:9px;font-size:15px;color:var(--ink2);
   padding:8px 0;border-bottom:0.5px solid var(--border);
 }
 .model-card.feat .model-feats li{color:rgba(255,255,255,0.65);border-bottom-color:rgba(255,255,255,0.08);}
@@ -415,13 +442,13 @@ section{padding:96px 48px;}
 .model-card.feat .ck{color:var(--gold);}
 .model-fit{
   margin-top:20px;background:var(--cream);border-radius:7px;
-  padding:12px 14px;font-size:12px;font-weight:300;color:var(--ink3);line-height:1.7;
+  padding:12px 14px;font-size:14px;font-weight:300;color:var(--ink3);line-height:1.7;
 }
 .model-card.feat .model-fit{background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.4);}
 .model-fit strong{color:var(--ink2);font-weight:500;}
 .model-card.feat .model-fit strong{color:rgba(255,255,255,0.7);}
 .model-subtitle{
-  font-size:12px;font-weight:500;letter-spacing:0.04em;
+  font-size:14px;font-weight:500;letter-spacing:0.04em;
   color:var(--teal);background:var(--teal-lt);
   display:inline-block;padding:3px 12px;border-radius:40px;margin-bottom:12px;
 }
@@ -430,12 +457,36 @@ section{padding:96px 48px;}
 /* ─── S9 UNLOCK ─── */
 #unlock{background:var(--white);border-top:0.5px solid var(--border);}
 .unlock-layout{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start;margin-top:52px;}
+/* === MERGED MODELS + UNLOCK === */
+.merge-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:52px;align-items:start;}
+.merge-card{border-radius:16px;padding:40px 36px;}
+.merge-left{background:#fff;border:1px solid #f0f0f0;box-shadow:0 20px 40px rgba(0,0,0,0.05);}
+.merge-left h3{font-family:var(--serif);font-size:22px;font-weight:900;color:#1a1c2e;margin-bottom:28px;border-left:4px solid var(--gold);padding-left:15px;}
+.path-list{list-style:none;display:flex;flex-direction:column;gap:0;margin-bottom:0;}
+.path-item{margin-bottom:22px;}
+.path-item h4{font-size:18px;font-weight:700;color:#1a1c2e;margin-bottom:8px;}
+.path-tags{display:flex;gap:8px;flex-wrap:wrap;}
+.ptag{padding:4px 12px;border-radius:6px;font-size:15px;font-weight:600;}
+.ptag-blue{background:#e8f4fd;color:#2b6cb0;}
+.ptag-purple{background:#f3e8ff;color:#6b46c1;}
+.ptag-teal{background:#e6fffa;color:#2c7a7b;}
+.merge-exp{font-size:15px;font-weight:400;color:#888;line-height:1.8;margin-top:28px;padding-top:20px;border-top:1px solid #eee;}
+.merge-exp strong{color:var(--gold);font-weight:700;}
+.merge-right{background:#1a1c2e;border:1px solid rgba(201,168,76,0.3);box-shadow:0 20px 40px rgba(0,0,0,0.2);}
+.merge-right h3{font-family:var(--serif);font-size:22px;font-weight:900;color:#fff;margin-bottom:12px;}
+.merge-right-desc{font-size:16px;font-weight:300;color:#b0b3c1;line-height:1.8;margin-bottom:24px;}
+.merge-form{display:flex;flex-direction:column;gap:14px;}
+.merge-form input{width:100%;padding:12px 15px;border-radius:8px;border:1px solid #3e415a;background:#2d304d;color:#fff;font-size:16px;font-family:var(--sans);outline:none;transition:border-color 0.2s;box-sizing:border-box;}
+.merge-form input::placeholder{color:rgba(255,255,255,0.35);}
+.merge-form input:focus{border-color:var(--gold);}
+.merge-cta{margin-top:24px;text-align:center;}
+.btn-merge-cta{display:block;width:100%;padding:18px 24px;font-size:19px;font-weight:600;letter-spacing:0.02em;border-radius:12px;text-align:center;}
 .unlock-left h3{font-family:var(--serif);font-size:34px;font-weight:900;line-height:1.2;margin-bottom:14px;}
 .unlock-left h3 span{color:var(--gold);}
-.unlock-left>p{font-size:15px;font-weight:300;color:var(--ink3);line-height:1.85;margin-bottom:24px;}
+.unlock-left>p{font-size:17px;font-weight:300;color:var(--ink3);line-height:1.85;margin-bottom:24px;}
 .unlock-tags{display:flex;gap:10px;flex-wrap:wrap;}
 .u-tag{
-  font-size:12px;font-weight:400;color:var(--ink2);
+  font-size:14px;font-weight:400;color:var(--ink2);
   border:0.5px solid var(--border);padding:6px 16px;border-radius:40px;
   background:var(--cream);
 }
@@ -447,61 +498,61 @@ section{padding:96px 48px;}
 }
 .u-card:hover{border-color:var(--gold);}
 .u-ep{font-family:var(--serif);font-size:18px;font-weight:900;color:var(--gold);opacity:0.55;flex-shrink:0;line-height:1;margin-top:2px;}
-.u-card h4{font-size:14px;font-weight:500;color:var(--ink);margin-bottom:4px;}
-.u-card p{font-size:12px;font-weight:300;color:var(--ink3);line-height:1.7;}
+.u-card h4{font-size:16px;font-weight:500;color:var(--ink);margin-bottom:4px;}
+.u-card p{font-size:14px;font-weight:300;color:var(--ink3);line-height:1.7;}
 
 /* ─── S10 FAQ ─── */
 #faq{background:var(--cream);}
 .faq-wrap{max-width:720px;margin-top:52px;}
 .faq-item{border-bottom:0.5px solid var(--border);padding:24px 0;}
 .faq-q{display:flex;justify-content:space-between;align-items:center;gap:20px;cursor:pointer;}
-.faq-q h4{font-size:15px;font-weight:500;color:var(--ink);line-height:1.55;}
+.faq-q h4{font-size:17px;font-weight:500;color:var(--ink);line-height:1.55;}
 .faq-tog{
   width:26px;height:26px;border-radius:50%;
   border:0.5px solid var(--border);
   display:flex;align-items:center;justify-content:center;
-  font-size:17px;color:var(--ink3);background:var(--white);
+  font-size:19px;color:var(--ink3);background:var(--white);
   flex-shrink:0;transition:all 0.2s;user-select:none;
 }
 .faq-item.open .faq-tog{background:var(--dark);color:#fff;border-color:var(--dark);transform:rotate(45deg);}
 .faq-a{
-  font-size:14px;font-weight:300;color:var(--ink3);line-height:1.85;
+  font-size:17px;font-weight:300;color:var(--ink3);line-height:1.85;
   max-height:0;overflow:hidden;transition:max-height 0.4s var(--ease),padding 0.3s;
 }
 .faq-item.open .faq-a{max-height:200px;padding-top:14px;}
 
 /* ─── S11 CTA ─── */
 #cta{background:var(--dark);text-align:center;padding:120px 48px;}
-.cta-eyebrow{display:block;font-size:11px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;}
+.cta-eyebrow{display:block;font-size:13px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;}
 .cta-title{
   font-family:var(--serif);font-weight:900;
   font-size:clamp(30px,4vw,52px);color:#fff;line-height:1.2;
   max-width:680px;margin:0 auto 14px;
 }
-.cta-sub{font-size:15px;font-weight:300;color:rgba(255,255,255,0.45);max-width:440px;margin:0 auto 44px;line-height:1.85;}
+.cta-sub{font-size:17px;font-weight:300;color:rgba(255,255,255,0.45);max-width:440px;margin:0 auto 44px;line-height:1.85;}
 .cta-3pts{
   max-width:640px;margin:0 auto 56px;
   display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;text-align:left;
 }
 .cta-pt{border:0.5px solid rgba(255,255,255,0.08);border-radius:10px;padding:20px;}
-.cta-pt h5{font-size:13px;font-weight:500;color:var(--gold);margin-bottom:6px;}
-.cta-pt p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.4);line-height:1.7;}
+.cta-pt h5{font-size:15px;font-weight:500;color:var(--gold);margin-bottom:6px;}
+.cta-pt p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.4);line-height:1.7;}
 .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
 .lead-kit{
   max-width:400px;margin:56px auto 0;
   background:rgba(255,255,255,0.04);
   border:0.5px solid rgba(255,255,255,0.1);border-radius:14px;padding:28px;text-align:left;
 }
-.lead-kit h4{font-family:var(--serif);font-size:17px;font-weight:600;color:#fff;margin-bottom:5px;}
-.lead-kit-sub{font-size:12px;font-weight:300;color:rgba(255,255,255,0.3);margin-bottom:18px;}
+.lead-kit h4{font-family:var(--serif);font-size:19px;font-weight:600;color:#fff;margin-bottom:5px;}
+.lead-kit-sub{font-size:14px;font-weight:300;color:rgba(255,255,255,0.3);margin-bottom:18px;}
 .kit-list{list-style:none;margin-bottom:20px;}
-.kit-list li{font-size:12px;font-weight:300;color:rgba(255,255,255,0.5);padding:6px 0;border-bottom:0.5px solid rgba(255,255,255,0.05);}
+.kit-list li{font-size:14px;font-weight:300;color:rgba(255,255,255,0.5);padding:6px 0;border-bottom:0.5px solid rgba(255,255,255,0.05);}
 .kit-list li:last-child{border-bottom:none;}
 .kit-list li::before{content:"— ";color:var(--gold);}
 .btn-kit{
   display:block;width:100%;text-align:center;
   background:var(--gold);color:var(--dark);
-  font-size:14px;font-weight:500;letter-spacing:0.04em;
+  font-size:16px;font-weight:500;letter-spacing:0.04em;
   padding:13px;border-radius:8px;text-decoration:none;
   transition:background 0.2s;
 }
@@ -512,9 +563,9 @@ footer{
   background:var(--dark);border-top:0.5px solid rgba(255,255,255,0.06);
   padding:32px 48px;display:flex;justify-content:space-between;align-items:center;
 }
-.footer-logo{font-family:var(--serif);font-weight:900;font-size:15px;color:rgba(255,255,255,0.35);letter-spacing:0.04em;}
+.footer-logo{font-family:var(--serif);font-weight:900;font-size:17px;color:rgba(255,255,255,0.35);letter-spacing:0.04em;}
 .footer-logo span{color:var(--gold);}
-footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
+footer p{font-size:14px;font-weight:300;color:rgba(255,255,255,0.18);}
 
 /* ─── REVEAL ANIMATIONS ─── */
 .rv{opacity:0;transform:translateY(22px);transition:opacity 0.7s var(--ease),transform 0.7s var(--ease);}
@@ -522,6 +573,32 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
 .rv-d1{transition-delay:0.1s;}
 .rv-d2{transition-delay:0.2s;}
 .rv-d3{transition-delay:0.3s;}
+
+/* ─── PREMIUM DASHBOARD CARD ─── */
+.premium-dash-card{
+  background:var(--dark);
+  border:1px solid rgba(212,175,55,0.22);
+  border-radius:14px;padding:36px;
+  box-shadow:0 16px 48px rgba(0,0,0,0.18);
+}
+.pdc-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:22px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,0.08);}
+.pdc-title{font-size:15px;font-weight:500;color:rgba(255,255,255,0.85);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:6px;}
+.pdc-live{display:flex;align-items:center;gap:6px;font-size:13px;color:#4ade80;font-weight:500;}
+.pdc-dot{width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 8px #4ade80;animation:pdcPulse 2s infinite;}
+@keyframes pdcPulse{0%,100%{opacity:1;}50%{opacity:0.35;}}
+.pdc-badge{font-size:12px;font-weight:500;letter-spacing:0.08em;color:var(--gold);background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.3);padding:4px 13px;border-radius:40px;}
+.pdc-quote{font-family:var(--serif);font-size:19px;font-weight:600;color:rgba(255,255,255,0.9);line-height:1.65;border-left:3px solid var(--gold);padding-left:18px;margin:0 0 28px;}
+.pdc-metrics{display:flex;flex-direction:column;}
+.pdc-metric-row{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.07);}
+.pdc-metric-row:last-child{border-bottom:none;}
+.pdc-metric-icon{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,0.07);display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0;line-height:1;}
+.pdc-metric-label{font-size:12px;font-weight:500;letter-spacing:0.12em;color:var(--gold);text-transform:uppercase;margin-bottom:4px;}
+.pdc-metric-num{font-family:var(--serif);font-size:22px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:5px;display:flex;align-items:center;gap:8px;}
+.pdc-arrow{font-size:17px;color:#4ade80;font-family:var(--sans);}
+.pdc-metric-desc{font-size:14px;font-weight:300;color:rgba(255,255,255,0.45);line-height:1.7;}
+.svc-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;}
+.stag-gold{font-size:12px;font-weight:500;letter-spacing:0.07em;color:var(--teal);background:var(--teal-lt);padding:3px 11px;border-radius:40px;}
+.stag-muted{font-size:12px;font-weight:400;letter-spacing:0.05em;color:var(--ink3);background:rgba(16,18,15,0.07);padding:3px 11px;border-radius:40px;}
 
 @media(max-width:900px){
   nav{padding:0 20px;}
@@ -532,7 +609,12 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
   .hero-stats{gap:0;flex-wrap:wrap;}
   .hero-stat{flex:0 0 50%;padding:12px 0;border-right:none;border-bottom:0.5px solid rgba(255,255,255,0.08);}
   .why-grid,.gaps-grid,.feat-grid,.models-grid,.auth-badges,.cta-3pts{grid-template-columns:1fr;}
+  .merge-layout{grid-template-columns:1fr;}
+  .merge-card{padding:28px 20px;}
+  .btn-merge-cta{font-size:17px;}
   .data-layout,.auth-layout,.unlock-layout,.m-panel.active{grid-template-columns:1fr;}
+  .cdash-layout{grid-template-columns:1fr;}
+  .dcard-grid{grid-template-columns:1fr 1fr;}
   .auth-bar{grid-column:auto;}
   footer{flex-direction:column;gap:10px;text-align:center;}
   #bridge .bridge-inner{flex-direction:column;padding:24px;}
@@ -666,7 +748,7 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
   <div class="hero-inner">
     <div class="hero-split">
       <div class="hero-left">
-        <div class="hero-eyebrow">2026 智慧館所轉型白皮書</div>
+        <div class="hero-eyebrow">2026 智慧館所轉型</div>
         <h1 class="hero-title">
           讓場域開口說話：<br>
           <span>CoreXR 數位敘事<br>解決方案，重塑空間商業產值</span>
@@ -681,23 +763,12 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
         </div>
       </div>
       <div class="hero-right">
-        <div class="hero-visual-card large">
-          <div class="hvc-tag">國家級殿堂</div>
-          <div class="hvc-center-text">
-            <span>大型藝術館所</span>
-            <div class="hvc-divider"></div>
-            <em>頂尖 XR 沉浸體驗</em>
-          </div>
-          <div class="hvc-label">Large Institution</div>
-        </div>
+        <div class="hero-visual-card large"></div>
         <div class="hero-visual-card small">
-          <div class="hvc-tag">中小型場域</div>
+          <div class="hvc-tag">各式場域</div>
           <div class="hvc-center-text">
-            <span>地方文史館・觀光工廠</span>
-            <div class="hvc-divider"></div>
-            <em>輕量化高投報模組</em>
+            <em>高投報模組</em>
           </div>
-          <div class="hvc-label">Small &amp; Mid Venue</div>
         </div>
       </div>
     </div>
@@ -884,70 +955,86 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
   </div>
 </div>
 
-<!-- S5 FEATURES -->
-<section id="features">
+<!-- S5+S6 CORE DATA (features + data merged) -->
+<section id="features" style="background:#0c2618;">
   <div class="container">
     <div class="sec-header">
-      <span class="sec-eyebrow">核心功能</span>
-      <h2 class="sec-title">讓展品開口，讓觀眾留步。</h2>
-      <p class="sec-sub">整合服務於國家級殿堂的 XR 基因，解決人力荒、引爆社群聲量，將每一場參觀轉化為實質營收。</p>
+      <span class="sec-eyebrow">核心數據服務</span>
+      <h2 class="sec-title">不僅解決場域痛點，更為您積累專屬數位資產。</h2>
+      <p class="sec-sub">宇萌 CoreXR 整合 16 年場域實戰經驗，透過「AI 接待、精準定位、商業導購」三大服務模組，同步積累別人搬不走的觀眾行為數據，建立您的營運護城河。</p>
     </div>
-    <div class="feat-grid">
-      <div class="feat-card rv">
-        <span class="feat-gap-tag">解決：人力缺口</span>
-        <div class="feat-num">01</div>
-        <h3>AI 虛擬人</h3>
-        <p>「親切領導型」數位顧問，賦予場域前衛的人文姿態。這是存在於雲端的數位專家，而非笨重的實體機器。一鍵部署至展間螢幕或訪客手機，優化 <strong>30%</strong> 人力支出。</p>
-        <div class="feat-scenario"><strong>情境 C｜AI 虛擬客服</strong>——根據訪客喜好推薦票券，它是您的最佳數位銷售員。</div>
-      </div>
-      <div class="feat-card rv rv-d1">
-        <span class="feat-gap-tag">解決：數位缺口</span>
-        <div class="feat-num">02</div>
-        <h3>CoreXR 無碼定位</h3>
-        <p>拿起手機即互動，不破壞場域美感的隱形科技。無需掃碼、無需額外硬體，讓您的場域在社群媒體上自帶流量，成為現象級熱點。</p>
-        <div class="feat-scenario"><strong>CoreXR 視覺震撼</strong>讓您的場域自帶分享意願，觀眾主動成為品牌傳播節點。</div>
-      </div>
-      <div class="feat-card rv rv-d2">
-        <span class="feat-gap-tag">解決：變現缺口</span>
-        <div class="feat-num">03</div>
-        <h3>AR 商業模組</h3>
-        <p>感動的當下即時下單，文創營收自動成長。導覽不再只是支出，內建的 AR 導購模組將在第一時間完成商業轉化。</p>
-        <div class="feat-scenario"><strong>情境 A｜特展限定</strong>觀眾掃描展品，立即跳出期間限定紀念品下單連結。<br><strong>情境 B｜觀光工廠</strong>AR 達成後發放電子優惠券，精準導引消費。</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- S6 DATA -->
-<section id="data">
-  <div class="container">
-    <div class="sec-header">
-      <span class="sec-eyebrow">核心資產</span>
-      <h2 class="sec-title">觀眾行為數據，是別人<br>複製不走的護城河。</h2>
-      <p class="sec-sub">系統不只讓場館更好用，它同時在積累一份最珍貴的資產：真實的觀眾行為軌跡。</p>
-    </div>
-    <div class="data-layout">
-      <div class="data-pts">
-        <div class="data-pt rv"><div class="data-pt-n">01</div><div><h4>互動熱區地圖</h4><p>即時掌握哪個展品互動次數最高，讓下次佈展更精準。</p></div></div>
-        <div class="data-pt rv"><div class="data-pt-n">02</div><div><h4>訪客旅程分析</h4><p>了解平均停留時長與離場時間點，優化導覽路線設計。</p></div></div>
-        <div class="data-pt rv"><div class="data-pt-n">03</div><div><h4>商業轉化追蹤</h4><p>從 AR 互動到實際購買，全程漏斗可視化，知道每分行銷費用的真實 ROI。</p></div></div>
-        <div class="data-pt rv"><div class="data-pt-n">04</div><div><h4>跨展期對比報告</h4><p>累積觀眾行為基準，建立場館專屬的數位運營知識庫。</p></div></div>
-      </div>
-      <div class="dash rv">
-        <div class="dash-hd">
-          <span class="dash-hd-title">場館數據儀表板・即時</span>
-          <span class="dash-live">● 資料同步中</span>
+<div class="cdash-layout">
+      <!-- 左：服務指標 -->
+      <div class="cdash-svc-list">
+        <div class="cdash-svc rv">
+          <div class="cdash-svc-num">01</div>
+          <div>
+            <div class="svc-tags">
+              <span class="stag-gold">解決人力缺口</span>
+              <span class="stag-muted">24/7 駐點服務</span>
+            </div>
+            <h3>AI 數位虛擬顧問服務</h3>
+            <p>賦予場域前衛的人文姿態，一鍵部署至展間螢幕或訪客手機，實測優化 <strong>30%</strong> 人力支出。</p>
+          </div>
         </div>
-        <div class="dash-metrics">
-          <div class="dash-m" aria-label="今日互動人次：3,847"><div class="dash-m-v">3,847</div><div class="dash-m-l">今日互動人次</div></div>
-          <div class="dash-m" aria-label="AR 啟動率：68%"><div class="dash-m-v">68%</div><div class="dash-m-l">AR 啟動率</div></div>
-          <div class="dash-m" aria-label="導購轉化金額：NT$82K"><div class="dash-m-v">NT$82K</div><div class="dash-m-l">導購轉化金額</div></div>
-          <div class="dash-m" aria-label="平均停留時長：12.4分鐘"><div class="dash-m-v">12.4分</div><div class="dash-m-l">平均停留時長</div></div>
+        <div class="cdash-svc rv rv-d1">
+          <div class="cdash-svc-num">02</div>
+          <div>
+            <div class="svc-tags">
+              <span class="stag-gold">隱形科技</span>
+              <span class="stag-muted">無需硬體維護</span>
+            </div>
+            <h3>CoreXR 無碼定位與指引</h3>
+            <p>無需掃碼，不破壞展場美感。精準引導訪客動線，並自動積累場域熱區圖。</p>
+          </div>
         </div>
-        <div class="dash-bars">
-          <div class="bar-row" aria-label="常設展區 AR 互動率：84%"><div class="bar-lbl"><span>常設展區</span><span>84%</span></div><div class="bar-track"><div class="bar-fill" style="width:84%"></div></div></div>
-          <div class="bar-row" aria-label="特展展廳 AR 互動率：91%"><div class="bar-lbl"><span>特展展廳</span><span>91%</span></div><div class="bar-track"><div class="bar-fill" style="width:91%"></div></div></div>
-          <div class="bar-row" aria-label="文創商店轉化率：37%"><div class="bar-lbl"><span>文創商店轉化</span><span>37%</span></div><div class="bar-track"><div class="bar-fill" style="width:37%"></div></div></div>
+        <div class="cdash-svc rv rv-d2">
+          <div class="cdash-svc-num">03</div>
+          <div>
+            <div class="svc-tags">
+              <span class="stag-gold">感動即變現</span>
+              <span class="stag-muted">ROI 可視化</span>
+            </div>
+            <h3>AR 商業轉化導購服務</h3>
+            <p>整合 AR 互動領券與虛擬導購，將每一場參觀即時轉化為<strong>實質營收成長</strong>。</p>
+          </div>
+        </div>
+      </div>
+      <!-- 右：經營者數據中控台 -->
+      <div class="premium-dash-card rv rv-d1">
+        <div class="pdc-header">
+          <div>
+            <div class="pdc-title">經營者數據中控台</div>
+            <div class="pdc-live"><span class="pdc-dot"></span>Live Dashboard</div>
+          </div>
+          <span class="pdc-badge">即時同步</span>
+        </div>
+        <p class="pdc-quote">「讓每一分營運預算，<br>都能看到科學回報。」</p>
+        <div class="pdc-metrics">
+          <div class="pdc-metric-row">
+            <div class="pdc-metric-icon">📊</div>
+            <div>
+              <div class="pdc-metric-label">觀眾旅程分析</div>
+              <div class="pdc-metric-num">+50% <span class="pdc-arrow">↑</span></div>
+              <div class="pdc-metric-desc">自動分析停留時長與離場點，優化下次策展佈置。</div>
+            </div>
+          </div>
+          <div class="pdc-metric-row">
+            <div class="pdc-metric-icon">💰</div>
+            <div>
+              <div class="pdc-metric-label">轉化效率追蹤</div>
+              <div class="pdc-metric-num">ROI 全透明 <span class="pdc-arrow">↑</span></div>
+              <div class="pdc-metric-desc">從互動到實際購買，全程漏斗可視化，掌握真實 ROI。</div>
+            </div>
+          </div>
+          <div class="pdc-metric-row">
+            <div class="pdc-metric-icon">📈</div>
+            <div>
+              <div class="pdc-metric-label">跨期對比報告</div>
+              <div class="pdc-metric-num">數據知識庫 <span class="pdc-arrow">↑</span></div>
+              <div class="pdc-metric-desc">累積觀眾行為基準，建立場館專屬的數據知識庫。</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -979,83 +1066,54 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
   </div>
 </section>
 
-<!-- S8 MODELS -->
+<!-- S8 MODELS + UNLOCK (merged) -->
 <section id="models">
   <div class="container">
     <div class="sec-header">
       <span class="sec-eyebrow">導入方案</span>
-      <h2 class="sec-title">靈活的商模，<br>讓系統為您創造營收。</h2>
-      <p class="sec-sub">不同規模、不同目標、不同預算——三種路徑，每一座場館都能找到最適合自己的起點。</p>
+      <h2 class="sec-title">靈活的商模服務，<br>為您的場域創造實質營收。</h2>
+      <p class="sec-sub">2026 年場域轉型不再是昂貴的負擔。我們提供三種靈活路徑，助您找到最適合的起點。</p>
     </div>
-    <div class="models-grid">
-      <div class="model-card rv">
-        <span class="model-tag">方案 A｜高效開發版</span>
-        <span class="model-subtitle">【政府補助與標案建議書】</span>
-        <h3>標案 / 一次性方案</h3>
-        <p>適合年度預算規劃，宇萌提供標準化標案規格建議，助您快速卡位 5–8 月轉型契機。</p>
-        <ul class="model-feats">
-          <li><span class="ck">✓</span>完整 CoreXR 系統一次性導入</li>
-          <li><span class="ck">✓</span>客製化場域標案規格文件</li>
-          <li><span class="ck">✓</span>政府補助申請技術輔導</li>
-          <li><span class="ck">✓</span>1 年維護技術支援</li>
-        </ul>
-        <div class="model-fit"><strong>最適合：</strong>國家級展館、有年度數位預算的公立博物館。</div>
-      </div>
-      <div class="model-card feat rv rv-d1">
-        <span class="model-badge">最受歡迎</span>
-        <span class="model-tag">方案 B｜營運共生版</span>
-        <h3>分潤 / 訂閱制</h3>
-        <span class="model-subtitle">【零風險數位轉型：AR 導購分潤模式】</span>
-        <p>降低初期建置費，透過 AR 互動領券、虛擬通路銷售進行分潤，讓系統自動「賺回成本」，與宇萌共享成長紅利。</p>
-        <ul class="model-feats">
-          <li><span class="ck">✓</span>低門檻初期建置費用</li>
-          <li><span class="ck">✓</span>AR 互動導購分潤模式</li>
-          <li><span class="ck">✓</span>觀眾數據儀表板全功能開放</li>
-          <li><span class="ck">✓</span>持續優化 + 無上限技術支援</li>
-        </ul>
-        <div class="model-fit"><strong>最適合：</strong>觀光工廠、私立博物館、商務型場域，希望降低前期投資風險的場館。</div>
-      </div>
-      <div class="model-card rv rv-d2">
-        <span class="model-tag">方案 C｜模組增掛版</span>
-        <span class="model-subtitle">【WebXR 模組化插件：快速導入與升級】</span>
-        <h3>既有場域升級</h3>
-        <p>無需全面汰換，僅需增購 AI 虛擬人或導覽模組，隨裝隨用，相容現有系統架構，按需擴充。</p>
-        <ul class="model-feats">
-          <li><span class="ck">✓</span>單一模組快速導入</li>
-          <li><span class="ck">✓</span>相容現有系統架構</li>
-          <li><span class="ck">✓</span>AI 虛擬人獨立啟用</li>
-          <li><span class="ck">✓</span>按需擴充，彈性升級</li>
-        </ul>
-        <div class="model-fit"><strong>最適合：</strong>已有部分數位基礎、希望局部升級的展館或策展方。</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- S9 UNLOCK -->
-<section id="unlock">
-  <div class="container">
-    <div class="sec-header">
-      <span class="sec-eyebrow">動態內容延伸</span>
-      <h2 class="sec-title">解密 100 個場館</h2>
-      <p class="sec-sub">我們正在走訪台灣最有故事的場館，將真實的數位轉型歷程記錄下來，讓更多場館看見可能性。</p>
-    </div>
-    <div class="unlock-layout">
-      <div class="unlock-left">
-        <h3>他們如何做到的？<br><span>我們去問了。</span></h3>
-        <p>從懷疑到相信、從保守到創新——每一座場館的數位轉型都有值得被說出口的故事。「解密 100 個場館」記錄真實的決策過程、導入數字與運營心得，不是廣告，是行業的共同財富。</p>
-        <div class="unlock-tags">
-          <span class="u-tag">深度訪談文章</span>
-          <span class="u-tag">GEO 搜尋優化專欄</span>
-          <span class="u-tag">Podcast 節目</span>
-          <span class="u-tag">數據案例報告</span>
+    <div class="merge-layout">
+      <!-- 左側：核心轉型路徑 -->
+      <div class="merge-card merge-left rv">
+        <div style="padding-left:20px;border-left:3px solid #d4af37;">
+          <h3 style="font-size:22px;font-weight:800;margin-bottom:30px;">核心轉型路徑</h3>
+          <div style="margin-bottom:25px;">
+            <h4 style="font-size:18px;font-weight:700;margin-bottom:10px;">場域 0 預算啟動</h4>
+            <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;margin-right:8px;">AR 導覽＋導購</span>
+            <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;">營運分潤模式</span>
+          </div>
+          <div style="margin-bottom:25px;">
+            <h4 style="font-size:18px;font-weight:700;margin-bottom:10px;">場域優化與升級</h4>
+            <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;margin-right:8px;">AI 虛擬導覽員</span>
+            <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;">AR 空間指引</span>
+          </div>
+          <div style="margin-bottom:30px;">
+            <h4 style="font-size:18px;font-weight:700;margin-bottom:10px;">場域營運模板</h4>
+            <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;margin-right:8px;">年度預算規劃</span>
+            <span style="background:#f1f1f1;color:#333;padding:4px 12px;border-radius:4px;font-size:13px;font-weight:600;">技術規格對齊</span>
+          </div>
+          <p style="font-size:15px;color:#888;border-top:1px solid #eee;padding-top:15px;">
+            宇萌 CoreXR 已具備 <strong style="color:#d4af37;">16+</strong> 年協助場館實現虛實整合轉型之深厚經驗。
+          </p>
         </div>
       </div>
-      <div class="unlock-cards">
-        <div class="u-card rv"><span class="u-ep">EP.</span><div><h4>「我們怎麼用 12 萬預算讓博物館人次成長 40%」</h4><p>中型地方文史館的真實導入故事，從評估到上線只花了 6 週。</p></div></div>
-        <div class="u-card rv rv-d1"><span class="u-ep">EP.</span><div><h4>「觀光工廠如何把 AR 遊戲變成最強業務員」</h4><p>南部知名觀光工廠分享導購模組上線後，提袋率從 23% 到 61% 的完整歷程。</p></div></div>
-        <div class="u-card rv rv-d2"><span class="u-ep">EP.</span><div><h4>「策展人說：數據改變了我們下一次特展的佈局決策」</h4><p>大型特展主辦方首度分享如何用觀眾行為數據優化展覽動線配置。</p></div></div>
+      <!-- 右側：索取轉型實戰包 -->
+      <div class="merge-card merge-right rv rv-d1">
+        <h3>索取轉型實戰包</h3>
+        <p class="merge-right-desc">100+ 座場館的數位實踐歷程，想知道他們如何做到？<br>請填寫資訊，我們將為您寄送專屬資料。</p>
+        <form class="merge-form" onsubmit="return false;">
+          <input type="text" placeholder="您的姓名（必填）" aria-label="您的姓名" autocomplete="name" required>
+          <input type="text" placeholder="公司 / 單位名稱（必填）" aria-label="公司 / 單位名稱" autocomplete="organization" required>
+          <input type="text" placeholder="職稱（必填）" aria-label="職稱" autocomplete="organization-title" required>
+          <input type="email" placeholder="聯絡 E-mail（必填）" aria-label="聯絡 E-mail" autocomplete="email" required>
+        </form>
       </div>
+    </div>
+    <!-- 底部 CTA -->
+    <div class="merge-cta">
+      <a href="#" class="btn-gold btn-merge-cta">獲取專屬轉型解密包 →</a>
     </div>
   </div>
 </section>
@@ -1077,19 +1135,19 @@ footer p{font-size:12px;font-weight:300;color:rgba(255,255,255,0.18);}
         <div class="faq-a">當然。我們強調「親切領導型」的技術支持，後台介面直覺化，就像使用社群軟體一樣簡單。上線前提供完整教育訓練，全天候技術客服確保您在任何時刻都不孤單。</div>
       </div>
       <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q"><h4>我們想申請政府補助或開標案，宇萌能提供協助嗎？</h4><span class="faq-tog">+</span></div>
-        <div class="faq-a">宇萌具備 16 年實戰經驗，能提供「標案規格範本」與「技術轉型白皮書」，協助您在 5–8 月預算規劃期輕鬆對接。我們了解公部門採購的每個細節，可作為您的技術顧問全程陪同。</div>
+        <div class="faq-q"><h4>如果未來場館有新的展項或擴建，目前的系統服務能彈性擴充嗎？</h4><span class="faq-tog">+</span></div>
+        <div class="faq-a">當然可以。CoreXR 採用模組化架構設計，就像數位樂高一樣。您可以先從單點的「AI 虛擬導覽」開始，未來再隨時增掛「AR 空間指引」或「數據儀表板」。我們的系統支援雲端即時更新，讓您的場館服務始終保持在科技最前線，無需擔心硬體過時。</div>
       </div>
       <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q"><h4>5–8 月預算規劃期快到了，現在開始還來得及嗎？</h4><span class="faq-tog">+</span></div>
-        <div class="faq-a">時間雖然緊，但只要現在啟動，通常仍然趕得上。標案快速通道方案最短 3 週即可完成評估與規格文件準備。我們的顧問會在第一次會面後 48 小時內提交初步可行性報告。</div>
+        <div class="faq-q"><h4>場域導入 CoreXR 服務，如何評估其數位轉型的實質效益？</h4><span class="faq-tog">+</span></div>
+        <div class="faq-a">數位轉型是一項長期的策略投資。CoreXR 透過 AI 緩解人力維護壓力，並利用「AR 導購模組」提供精準的商業轉化工具。根據不同場域的規模與應用深度，系統能有效協助優化營運成本並帶動周邊營收。宇萌憑藉 16 年場域輔導經驗，能在規劃階段與您共同評估，量身打造最符合預期目標的效益指標。</div>
       </div>
       <div class="faq-item" onclick="toggleFaq(this)">
         <div class="faq-q"><h4>觀眾的行為數據歸誰所有？有資安疑慮嗎？</h4><span class="faq-tog">+</span></div>
         <div class="faq-a">所有觀眾行為數據完整歸屬場館方所有。宇萌不擁有、不轉售任何場館數據。系統通過政府最高等級資安認證，確保您的數位資產在最安全的環境中被妥善保護。</div>
       </div>
       <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q"><h4>導入 AI 虛擬人需要購置昂貴的機器人硬體嗎？</h4><span class="faq-tog">+</span></div>
+        <div class="faq-q"><h4>導入 AI 虛擬導覽員需要購置昂貴的機器人硬體嗎？</h4><span class="faq-tog">+</span></div>
         <div class="faq-a">不需要。宇萌 CoreXR 的 <strong>AI 數位虛擬人</strong>採取軟體即服務（SaaS）模式，可相容於場域現有的顯示螢幕、Kiosk 或訪客手機（WebXR）。這能讓您避開硬體折舊與維修成本，專注於內容價值的傳遞。</div>
       </div>
     </div>
